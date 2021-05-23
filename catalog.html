@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="https://via.placeholder.com/160x66" alt="Логотип студии">
+        </a>
+        <ul>
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+        <a href="blank.html">Корзина</a>
+      </nav>
+    </header>
+    <h1>Магазин готовых шаблонов</h1>
+    
+    <main>
+        <h2>Фильтр товаров</h2>
+        <section>
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Стоимость</legend>
+                    <input type="range" id="cost" min="1" max="15000" step="1">
+                    <p>От <output name="cost">0</output></p>
+                    <p>До <output name="cost">15000 </output></p>
+                </fieldset>
+                <fieldset>
+                    <legen>Сетка:</legen>
+                    <ul>
+                        <li>
+                            <input type="radio" id="adaptive-filter" name="adaptive" value="adaptive" checked>
+                            <label for="advantage-filter">Адаптивная</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="fix-filter" name="fix" value="fix">
+                            <label for="fix-filter">Фиксированная</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="flex-filter" name="flex" value="flex">
+                            <label for="flex-filter">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="slider-filter" name="slider"  checked>
+                            <label for="slider-filter">Слайдер</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="advantage-filter" name="advantage">
+                            <label for="advantage-filter">Блок преимуществ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="news-filter" name="news" checked>
+                            <label for="news-filter">Новости</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="gallery-filter" name="gallery">
+                            <label for="gallery-filter">Галерея</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="basket-filter" name="basket">
+                            <label for="basket-filter">Корзина</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+        </section>
+        <section>
+            <h2>Сортировка товаров</h2>
+            <h3>Сортировать:</h3>
+            <ul>
+                <li>
+                    <a href="#">По цене</a>
+                </li>
+                <li> 
+                    <a href="#">По типу</a> 
+                </li>
+                <li>
+                    <a href="#">По названию</a>
+                </li>
+            </ul>
+            <button type="button" name="up-filter">Up</button>
+            <button type="button" name="down-filter">down</button>
+        </section>
+        <section>
+            <h2>Список сайтов</h2>
+            <ul>
+                <li>
+                    <a href="product.html">
+                        <p>
+                            <img src="https://via.placeholder.com/367x389" alt="Сайт Sedona">
+                        </p>
+                        <h3>Sedona</h3>
+                    </a>
+                    <p>
+                        Информационный сайт для туристов<br>
+                        <button type="button">9900Р</button>
+                    </p>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <img src="https://via.placeholder.com/367x620" alt="Сайт Pink">
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <img src="https://via.placeholder.com/367x620" alt="Сайт Borodinski">
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <img src="https://via.placeholder.com/367x620" alt="Сайт Mishka">
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <img src="https://via.placeholder.com/367x620" alt="Сайт A+">
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        <img src="https://via.placeholder.com/367x620" alt="Сайт Кваст">
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">Следущая</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <section>
+          <img src="https://via.placeholder.com/1440x416" alt="Карта">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>наб. Реки Карповки<br>
+          5 лит П,Санкт-Петербур<br>
+          <a href="tel:+78005558628">+7 800 555-86-28</a></p>
+        </section>
+      
+        <ul>
+          <li>
+            <a href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Инстаграм</a>
+          </li>
+        </ul>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+  </body>
