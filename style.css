@@ -1,7 +1,261 @@
-.footer-block{
+:root{
+    --basic-dark-white:#EEEEEE;
+    --basic-red:#FB565A;
+    --special-red:#E74246;
+    --super-special-red:#D7373B;
+    --bacic-white:#FFFFFF;
+    --basic-green:#00CA74;
+    --special-green:#00BC6C;
+    --super-special-green:#00AA62;
+    --basic-yellow:#EFC849;
+    --special-yellow:#EAB534;
+    --super-special-yellow:#E5A722;
+    --basic-black:#283136;
+    --black:#000000;
+    --special-grey:#666666;
+    --super-special-grey:#444444;
+}
+
+.footer-map{
     width: 1440px;
     height: 416px;
     background-image: url("images/footer/map.jpg");
+    background-color: #E8E5D5;
     
+}
+/*  global */
+body{
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color:var(--basic-black);
+    background-color: var(--bacic-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.main-header{
+    background-color: var(--basic-dark-white);
+}
+
+.first-header{
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color:var(--black);
+}
+/* navigation */
+
+.site-navigation,
+.cart{
+    font-size: 16px;
+    line-height: 30px;
+    color:var(--black);
+    text-transform: uppercase;
+    font-weight: 500;
+    list-style: none;
     
+}
+
+.site-navigation a,
+.cart a{
+    color:var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.cart a:hover,
+.cart a:focus{
+    color:var(--basic-red);
+
+}
+
+.site-navigation a:active,
+.cart a:active{
+    color:var(--basic-black);
+    opacity: 0.5;
+}
+
+
+/* scope */
+
+.scope-list{
+    list-style: none;
+}
+
+.scope-item{
+    text-align: left;
+}
+
+.scope-header{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color:var(--black);
+}
+
+.button{
+    font:inherit;
+    text-align: center;
+    color:var(--bacic-white);
+    text-transform: uppercase;
+    background-color: var(--basic-red);
+}
+
+.button:hover,
+.button:focus{
+    background-color:var(--special-red);
+}
+
+.button:active{
+    background-color: var(--super-special-red);
+}
+
+.scope-yellow{
+    background-color: var(--basic-yellow);
+}
+
+.scope-yellow:hover,
+.scope-yellow:focus{
+    background-color: var(--special-yellow);
+}
+
+.scope-yellow:active{
+    background-color: var(--super-special-yellow);
+}
+
+.scope-green:hover,
+.scope-green:focus{
+    background-color: var(--special-green);
+}
+
+.scope-green:active{
+    background-color: var(--super-special-green);
+}
+
+.scope-green{
+    background-color: var(--basic-green);
+}
+
+/* information */
+
+.info-header{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    color:var(--black);
+}
+
+.info-header-list{
+    font-weight: 700;
+}
+
+.info-list{
+    list-style: url(images/css/red-list.svg);
+}
+
+.advantages-header{
+    font-weight: 700;
+    color:var(--black);
+}
+
+.advantages-list{
+    text-align: center;
+}
+
+.advantages-percent{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+    color:var(--black);
+}
+
+.advantages-text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/* partners */
+
+.partrens-list{
+    list-style: none;
+}
+
+
+
+/* footer */
+
+/* contacts */
+
+.column-white{
+    background-color: var(--bacic-white);
+}
+
+.contacts{
+    text-align:left;
+    font-size: 16px;
+    line-height: 18px;
+    color:var(--special-grey);
+}
+
+.contacts-header{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color:var(--black);
+}
+
+.number{
+    color:inherit;
+}
+
+.social-list{
+    list-style: none;
+}
+
+.footer-offer{
+    font-size: 16px;
+    line-height: 22px;
+    color:var(--super-special-grey);
+}
+
+.footer-offer-header{
+    font-size:36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+/* feedback */
+
+.close-button{
+    border: none;
+}
+
+.login-header{
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 53px;
+    color:var(--black)
+}
+
+.name,
+.email,
+.text{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color:var(--black);
 }

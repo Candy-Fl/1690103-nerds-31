@@ -3,118 +3,122 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel=”icon” href=”icon.ico”>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header>
-      <nav>
-        <a href="" title="Главная страница">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="#" title="Главная страница" class="main-header-logo">
           <img src="images/header/nerds-logo.svg" width="160" height="66" alt="Логотип студии">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li title="Студия"><a href="">Студия</a></li>
           <li title="Клиенты"><a href="blank.html">Клиенты</a></li>
           <li><a href="catalog.html" title="Магазин">Магазин</a></li>
           <li><a href="" title="Контакты">Контакты</a></li>
         </ul>
-        <a href="blank.html" title="Корзина">
+        <a href="blank.html" class="cart" title="Корзина">
           <img src="images/header/cart-icon.svg" width="15" height="11" alt="серая тележка">
           Корзина
         </a>
       </nav>
+
       <section>
-        <h2>Долго, дорого,скрупулезно.</h2>
+        <h2 class="first-header">Долго, дорого,скрупулезно.</h2>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="" title="Больше информации">Узнать больше</a>
+        <a href="#" title="Больше информации" class="button main-info">Узнать больше</a>
       </section>
-      <section>
+      <section class="slider">
         <img src="images/header/slider/nerds-index-slide1.jpg" width="760" height="431" alt="Планшет и телефон">
-        <!--<button type="button" disabled></button>
-        <button type="button"></button>
-        <button type="button"></button>
+        <!--<button type="button" class="slider-button" disabled></button>
+        <button type="button" class="slider-button"></button>
+        <button type="button" class="slider-button"></button>
         -->
       </section>
       </header>
     
-    <main>
+    <main class="container">
       <h1>Дизайн-студия Нёрдс</h1>
-      <section>
-        <ul>
-          <li>
+      <section class="scope">
+        <ul class="scope-list">
+          <li class="scope-item">
             <img src="images/main/illustration-1.png" width="300" height="146" alt="Компьютер на красном фоне">
-            <h3>Веб-сайты</h3>
+            <h3 class="scope-header">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a href="" title="Оформление заказа">Заказать</a>
+            <a href="" class="button scope-red" title="Оформление заказа">Заказать</a>
           </li>
-          <li>
+          <li class="scope-item">
             <img src="images/main/illustration-2.png" width="300" height="146" alt="Два телефона">
-            <h3>Приложения</h3>
+            <h3 class="scope-header">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a href="" title="Оформление заказа">Заказать</a>
+            <a href="" class="button scope-green" title="Оформление заказа">Заказать</a>
           </li>
-          <li>
+          <li class="scope-item">
             <img src="images/main/illustration-3.png" width="300" height="146" alt="Изображение графика">
-            <h3>Презентации</h3>
+            <h3 class="scope-header">Презентации</h3>
             <p>Вы даже не подозреваете,насколько вы изумительны!</p>
-            <a href="" title="Оформление заказа">Заказать</a>
+            <a href="" class="button scope-yellow" title="Оформление заказа">Заказать</a>
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+      <section class="info">
+        <h2 class="info-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul>
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        <h3 class="info-header-list">Выполняем заказы на разработку:</h3>
+        <ul class="info-list">
+          <li class="info-item">Веб-сайтов любой сложности</li>
+          <li class="info-item">Мобильных приложений для iOS и Android</li>
+          <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </section>
-      <section>
+      <section class="advantages">
         <img src="images/main/nerds-illustration.jpg" width="360" height="208" alt="Альтернативный логотип студии">
-        <h3>с 2004 года Любим точность во всем:</h3>
+        <h3 class="advantages-header">с 2004 года Любим точность во всем:</h3>
         
           
-          <dl>
-            <dt>146%</dt>
-            <dd>Уровень самоотдачи</dd>
-            <dt>100%</dt>
-            <dd>Соблюдение сроков</dd>
-            <dt>50%</dt>
-            <dd>Минимальная предоплата</dd>
+          <dl class="advantages-list">
+            <dt class="advantages-percent">146%</dt>
+            <dd class="advantages-text">Уровень самоотдачи</dd>
+            <dt class="advantages-percent">100%</dt>
+            <dd class="advantages-text">Соблюдение сроков</dd>
+            <dt class="advantages-percent">50%</dt>
+            <dd class="advantages-text">Минимальная предоплата</dd>
           </dl>
           
         
       </section>
-      <section>
+      <section class="partrens">
         <h2>Партнёры</h2>
-        <ul>
-          <li>
+        <ul class="partrens-list">
+          <li class="partrens-item"> 
             <a href="#" title="Сайт HtmlAcademy">
               <img src="images/main/friends/logo_htmlacademy.png" width="200" height="58" alt="надпись HtmlAcademy">
             </a>
-          </li>
+          </li class="partrens-item">
           <li>
             <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
           </li>
-          <li>
+          <li class="partrens-item">
             <a href="#" title="Сайт Borodinski">
               <img src="images/main/friends/logo-2.png" width="200" height="58" alt="надпись Borodinski">
             </a>
           </li>
-          <li>
+          <li class="partrens-item">
             <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
           </li>
-          <li>
+          <li class="partrens-item">
             <a href="#" title="Сайт Pink">
               <img src="images/main/friends/logo-3.png" width="200" height="58" alt="Надпись Pink">
             </a>
           </li>
-          <li>
+          <li class="partrens-item">
             <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
           </li>
-          <li>
+          <li class="partrens-item">
             <a href="#" title="Сайт Mishka">
               <img src="images/main/friends/logo-4.png" width="200" height="58" alt="Надпись Mishka">
             </a>
@@ -122,65 +126,69 @@
         </ul>
       </section>
       </main>
-      <footer>
-        <section class="footer-block">
+      <footer class="main-footer">
+        <section class="footer-map">
           <h2>Как нас найти</h2>
           <a href="https://www.google.com/maps/place/Studio+212/@59.9704683,30.3170269,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
             <img src="images/footer/map-marker.png" width="231" height="190" alt="Метка студии">
           </a>
-          
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>наб. Реки Карповки<br>
-          5 лит П,Санкт-Петербур<br>
-          <a href="tel:+78005558628" title="Наш номер телефона">+7 800 555-86-28</a></p>
         </section>
-      
-        <ul>
-          <li>
-            <a href="#" title="Наша группа Вконтакте">
-              <img src="images/footer/VK.png" width="81" height="81" alt="Иконка Вконтакте">
-            </a>
-          </li>
-          <li>
-            <a href="#" title="Наша группа Фейсбук">
-              <img src="images/footer/facebook.png" width="81" height="81" alt="Иконка Фейсбук">
-            </a>
-          </li>
-          <li>
-            <a href="#" title="Наша страница в Инстаграм">
-              <img src="images/footer/Instagram.png" width="81" height="81" alt="Иконка Инстаграм">
-            </a>
-          </li>
-        </ul>
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="column-white">
+          <section class="contacts">
+            <h2>Связаться с нами</h2>
+            <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
+            <p>наб. Реки Карповки,<br>
+            5 лит П, Санкт-Петербург</p><br>
+            <a href="tel:+78005558628" title="Наш номер телефона" class="number">+7 800 555-86-28</a></p>
+            <a href="#" class="button">напишите нам</a>
+          </section>
+        </div>
+
+        <section class="footer-social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" title="Наша группа Вконтакте">
+                <img src="images/footer/VK.png" width="81" height="81" alt="Иконка Вконтакте">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" title="Наша группа Фейсбук">
+                <img src="images/footer/facebook.png" width="81" height="81" alt="Иконка Фейсбук">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" title="Наша страница в Инстаграм">
+                <img src="images/footer/Instagram.png" width="81" height="81" alt="Иконка Инстаграм">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-offer">
+          <h2 class="footer-offer-header">Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
     </footer>
 
-    <section>
-      <h2>Связаться с нами</h2>
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p>наб. Реки Карповки,<br>
-       5 лит П, Санкт-Петербург</p><br>
-       <a href="tel:+78005558628" title="Наш номер телефона">+7 800 555-86-28</a></p>
-    </section>
+    
 
-    <section>
+    <section class="login">
       <h2>Авторизация</h2>
-      <h3>Напишите нам</h3>
-      <button type="button"></button>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <h3 class="login-header">Напишите нам</h3>
+      <button class="close-button" type="button"><img src="images/css/close-button.svg"></button>
+      <form class="login-form" method="get" action="https://echo.htmlacademy.ru">
         <p>
           <label for="name">Ваше имя:</label>
-          <input type="text" id="name" name="username" placeholder="Имя Фамилия">
+          <input class="login-name" type="text" id="name" name="username" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="email">Ваш email:</label>
-          <input type="email" id="email" name="login" placeholder="email@example.com">
+          <input class="login-email" type="email" id="email" name="login" placeholder="email@example.com">
         </p>
         <p>
           <label for="text">Текст письма:</label>
-          <input type="text" id="text" name="text-message" placeholder="В свободной форме">
+          <input class="login-text" type="text" id="text" name="text-message" placeholder="В свободной форме">
         </p>
+        <a class="button">Отправить</a>
       </form>
     </section>
 
