@@ -14,6 +14,9 @@
     --black:#000000;
     --special-grey:#666666;
     --super-special-grey:#444444;
+    --border-grey:#D7DCDE;
+    --border-special-grey:#B4B9BB;
+    --social-red:#E74246;
 }
 
 .footer-map{
@@ -47,6 +50,15 @@ img{
 
 .main-header{
     background-color: var(--basic-dark-white);
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus{
+    opacity: 0.7;
+}
+
+.main-header-logo:active{
+    opacity: 0.3;
 }
 
 .first-header{
@@ -120,6 +132,7 @@ img{
 
 .button:active{
     background-color: var(--super-special-red);
+    
 }
 
 .scope-yellow{
@@ -193,7 +206,18 @@ img{
     list-style: none;
 }
 
+.partrens-item{
+    opacity: 0.2;
+}
 
+.partrens-item:focus,
+.partrens-item:hover{
+    opacity: 1;
+}
+
+.partrens-item:active{
+    opacity: 0.1;
+}
 
 /* footer */
 
@@ -238,10 +262,24 @@ img{
     color: var(--black);
 }
 
+
+
+
 /* feedback */
 
 .close-button{
     border: none;
+    background-color:var(--bacic-white);
+    opacity: 0.3;
+}
+
+.close-button:hover,
+.close-button:focus{
+    opacity: 1;
+}
+
+.close-button:active{
+    opacity: 0.1;
 }
 
 .login-header{
@@ -251,11 +289,31 @@ img{
     color:var(--black)
 }
 
-.name,
-.email,
-.text{
+
+.login-name,
+.login-email,
+.login-text{
+    border:2px solid var(--border-grey);
+}
+
+.login-name:hover,
+.login-name:focus,
+.login-email:hover,
+.login-email:focus,
+.login-text:hover,
+.login-text:focus{
+    border-color: var(--border-special-grey);
+}
+
+.login-text:invalid,
+.login-name:invalid,
+.login-email:invalid{
+    border-color: var(--social-red);
+}
+
+.label-login{
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
-    color:var(--black);
+    color:var(--black); 
 }
