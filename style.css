@@ -12,12 +12,16 @@
     --super-special-yellow:#E5A722;
     --basic-black:#283136;
     --black:#000000;
+    --button-black:#231F20;
     --special-grey:#666666;
     --super-special-grey:#444444;
     --filter-grey:#4D4D4D;
     --border-grey:#D7DCDE;
     --border-special-grey:#B4B9BB;
     --social-red:#E74246;
+    --border-grey:#DBDBDB;
+    --extra-special-grey:#DFDFDF;
+    --super-extra-grey:#D5D5D5;
 }
 
 
@@ -442,5 +446,122 @@ line-height: 55px;
 
 .sort-item:focus,
 .sort-item:hover{
+    opacity: 0.6;
+}
+
+.sort-item:active{
     opacity: 1;
+}
+
+.button-show{
+    color:var(--black);
+    background-color: var(--basic-dark-white);
+    border: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    padding: 17px 88px;
+}
+
+.dir{
+    opacity: 0.2;
+}
+
+
+
+.dir:focus,
+.dir:hover{
+    opacity: 1;
+}
+
+.dir:active .up,
+.dir:active .down{
+    fill: var(--button-black);
+}
+
+/* product-site */
+
+.site-list{
+    list-style: none;
+}
+
+.panel{
+    opacity: 0.12;
+}
+
+.site-item:focus > .panel,
+.site-item:hover > .panel{
+    opacity: 1;
+}
+
+.site-item{
+    text-align: center;
+}
+
+.site-name:hover,
+.site-name:focus{
+    color:var(--basic-red);
+}
+
+.site-name:active{
+    opacity: 0.3;
+}
+
+
+
+.site-product{
+    background-color: var(--basic-dark-white);
+}
+
+.site-name{
+    color:var(--black);
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.site-name:hover,
+.site-name:focus{
+    color:var(--special-red);
+}
+
+.site-info{
+    color:var(--special-grey);
+    line-height: 18px;
+}
+
+
+/* page number */
+
+.page-list{
+    list-style:none;
+}
+
+.page-button{
+    text-align: center;
+    line-height: 18px;
+    font-weight: 500;
+    width: 50px;
+    height: 50px;
+    color:var(--black);
+    border: 3px solid var(--border-grey);
+    background-color: var(--basic-dark-white);
+}
+
+.next{
+    width: 260px;
+}
+
+.active{
+    background-color: var(--bacic-white);
+}
+
+.page-button:focus,
+.page-button:hover{
+    background-color: var(--extra-special-grey) ;
+}
+
+.page-button:active{
+    background-color: var(--super-extra-grey);
 }
