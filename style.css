@@ -465,6 +465,8 @@ line-height: 55px;
 
 .dir{
     opacity: 0.2;
+    border: none;
+    
 }
 
 
@@ -507,10 +509,14 @@ line-height: 55px;
     opacity: 0.3;
 }
 
+.description{
+    display: block;
+}
 
 
 .site-product{
     background-color: var(--basic-dark-white);
+    
 }
 
 .site-name{
