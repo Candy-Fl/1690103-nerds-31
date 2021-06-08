@@ -10,35 +10,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a href="#" title="Главная страница" class="main-header-logo">
-          <img src="images/header/nerds-logo.svg" width="160" height="66" alt="Логотип студии">
-        </a>
-        <ul class="site-navigation">
-          <li title="Студия"><a href="">Студия</a></li>
-          <li title="Клиенты"><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html" title="Магазин">Магазин</a></li>
-          <li><a href="" title="Контакты">Контакты</a></li>
-        </ul>
-        <a href="blank.html" class="cart" title="Корзина">
-          <img src="images/header/cart-icon.svg" width="15" height="11" alt="серая тележка">
-          Корзина
-        </a>
-      </nav>
 
-      <section>
-        <h2 class="first-header">Долго, дорого,скрупулезно.</h2>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="#" title="Больше информации" class="button main-info">Узнать больше</a>
-      </section>
-      <section class="slider">
-        <img src="images/header/slider/nerds-index-slide1.jpg" width="760" height="431" alt="Планшет и телефон">
-        <!--<button type="button" class="slider-button" disabled></button>
-        <button type="button" class="slider-button"></button>
-        <button type="button" class="slider-button"></button>
-        -->
-      </section>
+    <header class="main-header">
+      <div class="main-header-bar">
+        <nav class="main-navigation">
+          <a href="#" title="Главная страница" class="main-header-logo">
+            <img src="images/header/nerds-logo.svg" width="160" height="66" alt="Логотип студии">
+          </a>
+          <ul class="site-navigation">
+            <li title="Студия"><a href="">Студия</a></li>
+            <li title="Клиенты"><a href="blank.html">Клиенты</a></li>
+            <li><a href="catalog.html" title="Магазин">Магазин</a></li>
+            <li><a href="" title="Контакты">Контакты</a></li>
+          </ul>
+          <a href="blank.html" class="cart" title="Корзина">
+            <img src="images/header/cart-icon.svg" width="15" height="11" alt="серая тележка">
+            Корзина
+          </a>
+        </nav>
+      </div>
+
+      <div class="main-info container">
+        <section>
+          <h2 class="first-header">Долго, дорого,скрупулезно.</h2>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#" title="Больше информации" class="button main-info">Узнать больше</a>
+        </section>
+        <section class="slider">
+          <img src="images/header/slider/nerds-index-slide1.jpg" width="760" height="431" alt="Планшет и телефон">
+          <!--<button type="button" class="slider-button" disabled></button>
+          <button type="button" class="slider-button"></button>
+          <button type="button" class="slider-button"></button>
+          -->
+        </section>
+      </div>
       </header>
     
     <main class="container">
@@ -65,32 +70,42 @@
           </li>
         </ul>
       </section>
-      <section class="info">
-        <h2 class="info-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3 class="info-header-list">Выполняем заказы на разработку:</h3>
-        <ul class="info-list">
-          <li class="info-item">Веб-сайтов любой сложности</li>
-          <li class="info-item">Мобильных приложений для iOS и Android</li>
-          <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
-      <section class="advantages">
-        <img src="images/main/nerds-illustration.jpg" width="360" height="208" alt="Альтернативный логотип студии">
-        <h3 class="advantages-header">с 2004 года Любим точность во всем:</h3>
-        
+
+      <div class="info-container">
+        <section class="info">
+          <h2 class="info-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="info-header-list">Выполняем заказы на разработку:</h3>
+          <ul class="info-list">
+            <li class="info-item">Веб-сайтов любой сложности</li>
+            <li class="info-item">Мобильных приложений для iOS и Android</li>
+            <li class="info-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+
+        <section class="advantages">
+          <img src="images/main/nerds-illustration.jpg" width="360" height="208" alt="Альтернативный логотип студии">
+          <h3 class="advantages-header">с 2004 года Любим точность во всем:</h3>
           
-          <dl class="advantages-list">
-            <dt class="advantages-percent">146%</dt>
-            <dd class="advantages-text">Уровень самоотдачи</dd>
-            <dt class="advantages-percent">100%</dt>
-            <dd class="advantages-text">Соблюдение сроков</dd>
-            <dt class="advantages-percent">50%</dt>
-            <dd class="advantages-text">Минимальная предоплата</dd>
-          </dl>
+            
+            <dl class="advantages-list">
+              <div class="advantage-container">
+                <dt class="advantages-percent">146%</dt>
+                <dd class="advantages-text">Уровень самоотдачи</dd>
+              </div>
+              <div class="advantage-container">
+                <dt class="advantages-percent">100%</dt>
+                <dd class="advantages-text">Соблюдение сроков</dd>
+              </div>
+              <div class="advantage-container">
+                <dt class="advantages-percent">50%</dt>
+                <dd class="advantages-text">Минимальная предоплата</dd>
+              </div>
+            </dl>
+            
           
-        
-      </section>
+        </section>
+      </div>
       <section class="partrens">
         <h2>Партнёры</h2>
         <ul class="partrens-list">
@@ -98,7 +113,7 @@
             <a href="#" title="Сайт HtmlAcademy">
               <img src="images/main/friends/logo_htmlacademy.png" width="200" height="58" alt="надпись HtmlAcademy">
             </a>
-          </li class="partrens-item">
+          </li">
           <li>
             <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
           </li>
@@ -107,7 +122,7 @@
               <img src="images/main/friends/logo-2.png" width="200" height="58" alt="надпись Borodinski">
             </a>
           </li>
-          <li class="partrens-item">
+          <li>
             <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
           </li>
           <li class="partrens-item">
@@ -115,7 +130,7 @@
               <img src="images/main/friends/logo-3.png" width="200" height="58" alt="Надпись Pink">
             </a>
           </li>
-          <li class="partrens-item">
+          <li>
             <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
           </li>
           <li class="partrens-item">
@@ -126,14 +141,14 @@
         </ul>
       </section>
       </main>
-      <footer class="main-footer">
+      <footer class="footer-container">
         <section class="footer-map">
           <h2>Как нас найти</h2>
           <a href="https://www.google.com/maps/place/Studio+212/@59.9704683,30.3170269,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
             <img src="images/footer/map-marker.png" width="231" height="190" alt="Метка студии">
           </a>
         </section>
-        <div class="column-white">
+        <div class="column-white container">
           <section class="contacts">
             <h2>Связаться с нами</h2>
             <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
@@ -144,28 +159,30 @@
           </section>
         </div>
 
-        <section class="footer-social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" title="Наша группа Вконтакте">
-                <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" d="M43.14 44.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.71.74-5.25 1.6-2.15 2.24-3.46 2.04-4.02-.2-.54-1.37-.4-1.37-.4l-3.91.02c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.14-2.72 2.96-.66-.44-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0039.5 33c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.52.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.93-1.4-2.93s-.1-.28-.32-.44c-.25-.18-.6-.24-.6-.24l-3.71.02s-.56.02-.77.27c-.18.21-.01.66-.01.66s2.9 6.88 6.2 10.35c3.02 3.18 6.45 2.97 6.45 2.97h1.56s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z" fill="#fff"/></svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" title="Наша группа Фейсбук">
-                <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" d="M47 35v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V43h4v-4h-4v-4h4z" fill="#fff"/></svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" title="Наша страница в Инстаграм">
-                <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" fill-rule="evenodd" clip-rule="evenodd" d="M33 30h15a3 3 0 013 3v15a3 3 0 01-3 3H33a3 3 0 01-3-3V33a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM33 48v-9h1.18a6.5 6.5 0 1012.64 0H48v9H33zm11-11h4v-4h-4v4z" fill="#fff"/></svg>              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-offer">
-          <h2 class="footer-offer-header">Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
+        <div class="container footer-info-columns">
+          <section class="footer-social ">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="#" title="Наша группа Вконтакте">
+                  <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" d="M43.14 44.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.71.74-5.25 1.6-2.15 2.24-3.46 2.04-4.02-.2-.54-1.37-.4-1.37-.4l-3.91.02c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.14-2.72 2.96-.66-.44-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0039.5 33c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.52.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.93-1.4-2.93s-.1-.28-.32-.44c-.25-.18-.6-.24-.6-.24l-3.71.02s-.56.02-.77.27c-.18.21-.01.66-.01.66s2.9 6.88 6.2 10.35c3.02 3.18 6.45 2.97 6.45 2.97h1.56s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z" fill="#fff"/></svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" title="Наша группа Фейсбук">
+                  <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" d="M47 35v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V43h4v-4h-4v-4h4z" fill="#fff"/></svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" title="Наша страница в Инстаграм">
+                  <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" fill-rule="evenodd" clip-rule="evenodd" d="M33 30h15a3 3 0 013 3v15a3 3 0 01-3 3H33a3 3 0 01-3-3V33a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM33 48v-9h1.18a6.5 6.5 0 1012.64 0H48v9H33zm11-11h4v-4h-4v4z" fill="#fff"/></svg>              </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-offer ">
+            <h2 class="footer-offer-header">Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </section>
+        </div>
     </footer>
 
     
