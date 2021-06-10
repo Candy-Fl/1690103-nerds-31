@@ -416,6 +416,8 @@ line-height: 55px;
 .filter-list{
     list-style: none;
     text-align: left;
+    margin:0;
+    padding:0;
 }
 
 .filter-radio{
@@ -443,6 +445,9 @@ line-height: 55px;
 
 .special-list{
     list-style-type:none;
+    text-align: left;
+    margin:0;
+    padding:0;
 }
 
 .sort-list{
@@ -476,6 +481,9 @@ line-height: 55px;
 .dir{
     opacity: 0.2;
     border: none;
+    margin:0;
+    padding:0;
+    /* margin-right: 18px; */
     
 }
 
@@ -598,6 +606,11 @@ line-height: 55px;
 }
 
 
+
+.tagline{
+    max-width: 542px;
+}
+
 .main-header-logo{
     width: 160px;
     height: 66px;
@@ -615,9 +628,15 @@ line-height: 55px;
 
 .main-info{
     display: grid;
-    grid-template-columns:1fr 2fr;
-    margin-bottom: 67px;
+    grid-template-columns:min-content 766px;
+    margin-bottom: 13px;
 }
+
+.first-header{
+    margin:0;
+    padding:0;
+}
+
 
 .scope-list{
     display: grid;
@@ -700,3 +719,57 @@ line-height: 55px;
 .footer-map{
     margin-bottom: 80px;
 }
+
+
+/* grid catalog */
+
+.page-catalog{
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 100px;
+}
+
+.sort-columns{
+    display: grid;
+    grid-template-columns:4fr 3fr 1fr;
+    grid-column: 1 / -1;
+}
+
+.sort-list{
+    display:grid;
+    grid-template-columns:max-content max-content max-content;
+    column-gap: 25px;
+}
+
+.filter-column{
+    justify-self: left;
+}
+
+.button-column{
+    /* margin-left: 47px; */
+     justify-self: center;
+   
+}
+
+
+.site-list{
+    margin: 0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 30px;
+    margin-bottom: 54px;
+}
+
+
+.page-list{
+    margin:0;
+    padding:0;
+    display:grid;
+    width:443px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    column-gap: 11px;
+    margin-bottom:60px
+}
+ 
