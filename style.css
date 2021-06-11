@@ -39,6 +39,7 @@ body{
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
+    
 
 }
 
@@ -516,6 +517,8 @@ line-height: 55px;
 
 .site-item{
     text-align: center;
+    margin:0;
+    padding: 0;
 }
 
 .site-name:hover,
@@ -733,6 +736,7 @@ line-height: 55px;
     display: grid;
     grid-template-columns:4fr 3fr 1fr;
     grid-column: 1 / -1;
+    align-items: baseline;
 }
 
 .sort-list{
@@ -748,9 +752,13 @@ line-height: 55px;
 .button-column{
     /* margin-left: 47px; */
      justify-self: center;
-   
+     
+    
 }
 
+.down{
+    margin-right: 18px;
+}
 
 .site-list{
     margin: 0;
@@ -760,6 +768,11 @@ line-height: 55px;
     column-gap: 40px;
     row-gap: 30px;
     margin-bottom: 54px;
+    width: 760px;
+}
+
+.site-item{
+    
 }
 
 
