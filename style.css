@@ -481,10 +481,10 @@ line-height: 55px;
 
 .dir{
     opacity: 0.2;
-    border: none;
+    border: 0;
     margin:0;
     padding:0;
-    /* margin-right: 18px; */
+    
     
 }
 
@@ -750,14 +750,10 @@ line-height: 55px;
 }
 
 .button-column{
-    /* margin-left: 47px; */
+    
      justify-self: center;
      
     
-}
-
-.down{
-    margin-right: 18px;
 }
 
 .site-list{
@@ -771,9 +767,7 @@ line-height: 55px;
     width: 760px;
 }
 
-.site-item{
-    
-}
+
 
 
 .page-list{
