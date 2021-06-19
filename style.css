@@ -1,6 +1,6 @@
 :root{
     --basic-dark-white:#EEEEEE;
-    --basic-red:#FB565A;
+    --brand-color:#FB565A;
     --special-red:#E74246;
     --super-special-red:#D7373B;
     --bacic-white:#FFFFFF;
@@ -94,7 +94,7 @@ fieldset{
 }
 
 .current{
-    border:2px solid var(--basic-red);
+    border:2px solid var(--brand-color);
     border-left: none;
     border-top: none;
     border-right: none;
@@ -112,7 +112,7 @@ fieldset{
 .site-navigation a:focus,
 .cart:hover,
 .cart:focus{
-    color:var(--basic-red);
+    color:var(--brand-color);
 
 }
 
@@ -173,7 +173,7 @@ fieldset{
     text-align: center;
     color:var(--bacic-white);
     text-transform: uppercase;
-    background-color: var(--basic-red);
+    background-color: var(--brand-color);
     width: max-content;
 }
 
@@ -236,6 +236,11 @@ fieldset{
     list-style: url(images/css/red-list.svg);
 }
 
+.info-item{
+    margin-bottom: 46px;
+}
+
+
 .scope{
     padding-bottom: 80px;
 }
@@ -243,6 +248,13 @@ fieldset{
 .advantages-header{
     font-weight: 700;
     color:var(--black);
+}
+
+.advantages img{
+    width:360px; 
+    height:208px;
+    margin-top:37px;
+    margin-bottom: 31px;
 }
 
 .advantages-list{
@@ -600,7 +612,7 @@ line-height: 55px;
 
 .site-name:hover,
 .site-name:focus{
-    color:var(--basic-red);
+    color:var(--brand-color);
 }
 
 .site-name:active{
@@ -893,9 +905,6 @@ line-height: 55px;
     padding:0;
     width:443px;
     margin-bottom:60px;
-    /* display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    column-gap: 11px; */
     display: flex;
     justify-content: space-between;
 }
