@@ -127,6 +127,13 @@ fieldset{
     text-align: center;
 }
 
+.cart,
+.site-navigation-item a{
+    padding:20px 20px;
+}
+
+
+
 
 /* scope */
 
@@ -156,8 +163,23 @@ fieldset{
 }
 
 .scope-item{
-    width: min-content;
+    width: 300px;
     text-align: left;
+}
+
+.scope-item .button{
+    padding:16px 40px;
+}
+
+.scope-item h3{
+    margin-top:25px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.scope-item p{
+    margin-bottom: 32px;
 }
 
 .scope-header{
@@ -178,7 +200,8 @@ fieldset{
 }
 
 .learn-button{
-    padding:17px 54px;
+    margin-bottom: 95px;
+    padding:16px 54px;
 }
 
 .button:hover,
@@ -226,10 +249,20 @@ fieldset{
     font-size: 45px;
     line-height: 45px;
     color:var(--black);
+    margin:0;
+    margin-bottom: 32px;
 }
 
 .info-header-list{
     font-weight: 700;
+}
+
+.info-header-list{
+    margin-top: 40px;
+    margin-bottom: 23px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .info-list{
@@ -237,7 +270,7 @@ fieldset{
 }
 
 .info-item{
-    margin-bottom: 46px;
+    margin-bottom: 36px;
 }
 
 
@@ -248,13 +281,14 @@ fieldset{
 .advantages-header{
     font-weight: 700;
     color:var(--black);
+    margin-top: 37px;
+    margin-bottom: 31px;
 }
 
 .advantages img{
     width:360px; 
     height:208px;
     margin-top:37px;
-    margin-bottom: 31px;
 }
 
 .advantages-list{
@@ -278,15 +312,24 @@ fieldset{
 /* partners */
 
 .partrens-list{
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin:0;
     padding:0;
+    vertical-align:middle;
+    background-image: url(images/main/friends/Stick1.png), 
+                      url(images/main/friends/Stick1.png),
+                      url(images/main/friends/Stick1.png);
+    background-position:260px center, 600px center, 900px center; 
+    background-repeat:no-repeat;
 }
 
 .partrens-item{
+    position: relative;
     opacity: 0.2;
-    margin-right: 50px;
 }
+
 
 .partrens-item:focus,
 .partrens-item:hover{
@@ -297,6 +340,16 @@ fieldset{
     opacity: 0.1;
 }
 
+/* .HtmlAcademy{
+    margin-right: 95px;
+    width: 200px;
+    height: 58px;
+} */
+
+/* .Borodinski{
+    margin-right: 104px;
+} */
+
 /* footer */
 
 /* contacts */
@@ -306,10 +359,20 @@ fieldset{
 }
 
 .contacts{
+    width: 319px;
+    height: 308px;
     text-align:left;
     font-size: 16px;
     line-height: 18px;
     color:var(--special-grey);
+    padding-left:50px;
+    padding-top:48px;
+    padding-bottom: 48px;
+    padding-right: 39px;
+}
+
+.contact-button{
+    padding:16px 44px;
 }
 
 .contacts-header{
@@ -370,22 +433,29 @@ fieldset{
     border: none;
     background-color:var(--bacic-white);
     opacity: 0.3;
+    margin-right: 90px;
 }
 
 .close-button:hover,
 .close-button:focus{
     opacity: 1;
+    outline: none;
 }
 
 .close-button:active{
     opacity: 0.1;
+    outline: none;
+
 }
 
 .login-header{
     font-weight: bold;
     font-size: 45px;
     line-height: 53px;
-    color:var(--black)
+    color:var(--black);
+    width: 311px;
+    margin-left: 100px;
+    margin-bottom: 37px;
 }
 
 
@@ -418,8 +488,18 @@ fieldset{
     color:var(--black); 
 }
 
+.send-button{
+    margin-left:100px;
+    margin-top: 47px;
+    margin-bottom: 84px;
+    padding:16px 83px;
+}
 
-
+.login-name,
+.login-email{
+    width: 330px;
+    padding-left:16px;
+}
 
 
 /* catalog */
@@ -427,11 +507,13 @@ fieldset{
 /* header */
 
 .catalog-main-header{
-color:var(--black);
-text-align: center;
-font-weight: 500;
-font-size: 55px;
-line-height: 55px;
+    color:var(--black);
+    text-align: center;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    margin-top: 72px;
+    margin-bottom: 108px;
 }
 
 /* filter */
@@ -453,7 +535,10 @@ line-height: 55px;
     line-height: 30px;
     color:var(--black);
     margin-bottom: 14px;
+    text-transform: uppercase;
 }
+
+
 
 .coast-filter{
     display: flex;
@@ -563,11 +648,13 @@ line-height: 55px;
 .dir:focus,
 .dir:hover{
     opacity: 1;
+    outline: none;
 }
 
 .dir:active .up,
 .dir:active .down{
     fill: var(--button-black);
+    outline: none;
 }
 
 /* product-site */
@@ -594,9 +681,10 @@ line-height: 55px;
     padding: 0;
 }
 
-.site-button{
+.price-button{
     margin-top:32px;
     margin-bottom: 44px;
+    padding:16px 72px;
 }
 
 .site-item p{
@@ -686,6 +774,18 @@ line-height: 55px;
     background-color: var(--super-extra-grey);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+  }
 
 /* grid */
 
@@ -705,14 +805,26 @@ line-height: 55px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    grid-column-gap: 45px;
+    grid-column-gap:5px;
 }
 
 .cart{
-
+    position: relative;
     justify-self: right;
     text-align: center;
     align-self: center;
+}
+
+.cart::before{
+    content:"";
+    position: absolute;
+    top:27px;
+    left:-25px;
+    width: 16px;
+    height: 16px;
+    background-image: url(images/header/cart-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .cart img{
@@ -722,6 +834,11 @@ line-height: 55px;
 .tagline{
     margin-top:80px;
     width: 400px;
+}
+
+.tagline p{
+    margin-top: 25px;
+    margin-bottom: 39px;
 }
 
 
@@ -757,6 +874,7 @@ line-height: 55px;
 
 .scope{
     border-bottom: 2px solid var(--basic-dark-white);
+    margin-top: 67px;
 }
 
 
@@ -769,13 +887,13 @@ line-height: 55px;
 .info-container{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin-top: 39px;
     margin-bottom: 73px;
     column-gap: 150px;
 }
 
 .info{
     width: 650px;
+    margin-top: 73px;
 }
 
 
@@ -795,13 +913,13 @@ line-height: 55px;
 }
 
 .partrens-list{
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
     border-top: 2px solid var(--basic-dark-white);
     border-bottom: 2px solid var(--basic-dark-white) ;
-    padding-top:40px;
-    padding-bottom: 20px;
+    padding-top:46px;
+    padding-bottom: 44px;
     margin-bottom: 80px;
+    padding-left:20px;
+    padding-right: 20px;
 }
 
 .footer-info-columns{
@@ -828,6 +946,39 @@ line-height: 55px;
     margin-bottom: 80px;
 }
 
+.login{
+    width: 960px;
+}
+
+.login-top{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+}
+
+.login-area{
+    display: grid;
+    grid-template-columns: 360px 360px;
+    column-gap: 40px;
+    row-gap: 34px;
+}
+
+.login-area p{
+    margin:0;
+    margin-left:100px;
+}
+
+.login-email,
+.login-name{
+    width: 360px;
+    height: 50px;
+}
+
+.login-text{
+    width: 760px;
+    padding-left:16px;
+    padding-top:16px;
+    padding-bottom:84px;
+}
 
 /* grid catalog */
 

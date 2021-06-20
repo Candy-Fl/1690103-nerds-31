@@ -23,10 +23,7 @@
               <li class="site-navigation-item"><a href="catalog.html" title="Магазин">Магазин</a></li>
               <li class="site-navigation-item"><a href="" title="Контакты">Контакты</a></li>
           </ul>
-          <a href="" class="cart" title="Корзина">
-            <img src="images/header/cart-icon.svg" width="15" height="11" alt="серая тележка">
-            Корзина
-          </a>
+          <a href="" class="cart" title="Корзина">Корзина</a>
         </nav>
       </div>
 
@@ -43,7 +40,7 @@
       </header>
     
     <main class="container">
-      <h1>Дизайн-студия Нёрдс</h1>
+      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
       <section class="scope">
         <ul class="scope-list">
           <li class="scope-item">
@@ -103,35 +100,26 @@
         </section>
       </div>
       <section class="partrens">
-        <h2>Партнёры</h2>
+        <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partrens-list">
-          <li class="partrens-item"> 
+          <li class="partrens-item HtmlAcademy "> 
             <a href="#" title="Сайт HtmlAcademy">
               <img src="images/main/friends/logo_htmlacademy.png" width="200" height="58" alt="надпись HtmlAcademy">
             </a>
           </li">
-          <li>
-            <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
-          </li>
-          <li class="partrens-item">
+          <li class="partrens-item Borodinski">
             <a href="#" title="Сайт Borodinski">
-              <img src="images/main/friends/logo-2.png" width="200" height="58" alt="надпись Borodinski">
+              <img src="images/main/friends/logo-2.png" width="209" height="90" alt="надпись Borodinski">
             </a>
           </li>
-          <li>
-            <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
-          </li>
-          <li class="partrens-item">
+          <li class="partrens-item Pink">
             <a href="#" title="Сайт Pink">
-              <img src="images/main/friends/logo-3.png" width="200" height="58" alt="Надпись Pink">
+              <img src="images/main/friends/logo-3.png" width="185" height="52" alt="Надпись Pink">
             </a>
           </li>
-          <li>
-            <img src="images/main/friends/Stick1.png" width="2" height="52" alt="Палочка">
-          </li>
-          <li class="partrens-item">
+          <li class="partrens-item Mishka">
             <a href="#" title="Сайт Mishka">
-              <img src="images/main/friends/logo-4.png" width="200" height="58" alt="Надпись Mishka">
+              <img src="images/main/friends/logo-4.png" width="173" height="84" alt="Надпись Mishka">
             </a>
           </li>
         </ul>
@@ -139,19 +127,19 @@
       </main>
       <footer class="footer-container">
         <section class="footer-map">
-          <h2>Как нас найти</h2>
+          <h2 class="visually-hidden">Как нас найти</h2>
           <a href="https://www.google.com/maps/place/Studio+212/@59.9704683,30.3170269,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
             <img src="images/footer/map-marker.png" width="231" height="190" alt="Метка студии">
           </a>
         </section>
         <div class="column-white container">
           <section class="contacts">
-            <h2>Связаться с нами</h2>
+            <h2 class="visually-hidden">Связаться с нами</h2>
             <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
             <p>наб. Реки Карповки,<br>
             5 лит П, Санкт-Петербург</p><br>
             <a href="tel:+78005558628" title="Наш номер телефона" class="number">+7 800 555-86-28</a></p>
-            <a href="#" class="button">напишите нам</a>
+            <a href="#" class="button contact-button">напишите нам</a>
           </section>
         </div>
 
@@ -184,13 +172,13 @@
     
 
     <section class="login">
-      <h2>Авторизация</h2>
+      <h2 class="visually-hidden">Авторизация</h2>
       <div class="login-top">
         <h3 class="login-header">Напишите нам</h3>
         <button class="close-button" type="button"><img src="images/css/close-button.svg"></button>
       </div>
       <form class="login-form" method="get" action="https://echo.htmlacademy.ru">
-        <div class="login-middle">
+        <div class="login-area">
           <p>
             <label class="label-login" for="name">Ваше имя:</label><br>
             <input class="login-name" type="text" id="name" name="username" placeholder="Имя Фамилия">
@@ -199,12 +187,12 @@
             <label class="label-login" for="email">Ваш email:</label><br>
             <input class="login-email" type="email" id="email" name="login" placeholder="email@example.com">
           </p>
-        </div>
           <p>
             <label class="label-login" for="text">Текст письма:</label><br>
             <input class="login-text" type="text" id="text" name="text-message" placeholder="В свободной форме">
           </p>
-        <a href="#" class="button">Отправить</a>
+        </div>
+        <a href="#" class="button send-button">Отправить</a>
       </form>
     </section>
 
