@@ -30,31 +30,42 @@
 
     <main class="container page-catalog">
         <section class="left-filter">
-            <h2>Фильтр товаров</h2>
+            <h2 class="visually-hidden">Фильтр товаров</h2>
             <form method="get" action="https://echo.htmlacademy.ru">
-                <fieldset >
+                <fieldset class="coast-item">
                     <legend class="catalog-legend">Стоимость:</legend>
-                    <div class="input-field">
-                        <input class="range-field" type="range" id="cost" min="1" max="15000" step="1">
-                    </div>
-                    <div class="coast-filter">
-                        <p>От <output class="input-field" name="cost">0</output></p>
-                        <p>До <output class="input-field" name="cost">15000 </output></p>
+                    <div class="range-filter">                    
+                        <div class="coast-controls">
+                            <div class="scale">
+                                <div class="bar" style="margin-left:0%;
+                                                        width:70%"></div>
+                            </div>
+                            <div class="toggle toggle-min" tabindex="0" style="left:5%;"></div>
+                            <div class="toggle toggle-max" tabindex="0" style="left:65%"></div>
+                        </div>
+                        <div class="price-output">
+                            <label class="min-price"> 
+                                От<input class="min-price-input" name="min-price" value="0">
+                            </label>
+                            <label class="max-price">
+                                До <input class="max-price-input" name="max-price" value="15000">
+                            </label>
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend class="catalog-legend">Сетка:</legend>
                     <ul class="filter-list">
                         <li class="filter-item">
-                            <input class="filter-radio" type="radio" id="adaptive-filter" name="adaptive" value="adaptive" checked>
-                            <label for="advantage-filter">Адаптивная</label>
+                            <input class="filter-radio visually-hidden" type="radio" id="adaptive-filter" name="adaptive" value="adaptive" checked>
+                            <label for="adaptive-filter">Адаптивная</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-radio" type="radio" id="fix-filter" name="fix" value="fix">
+                            <input class="filter-radio visually-hidden" type="radio" id="fix-filter" name="fix" value="fix">
                             <label for="fix-filter">Фиксированная</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-radio" type="radio" id="flex-filter" name="flex" value="flex">
+                            <input class="filter-radio visually-hidden" type="radio" id="flex-filter" name="flex" value="flex">
                             <label for="flex-filter">Резиновая</label>
                         </li>
                     </ul>
@@ -63,23 +74,23 @@
                     <legend class="catalog-legend">Особенности:</legend>
                     <ul class="special-list">
                         <li class="filter-item">
-                            <input class="filter-checkbox" type="checkbox" id="slider-filter" name="slider"  checked>
+                            <input class="filter-checkbox visually-hidden" type="checkbox" id="slider-filter" name="slider"  checked>
                             <label for="slider-filter">Слайдер</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-checkbox" type="checkbox" id="advantage-filter" name="advantage">
+                            <input class="filter-checkbox visually-hidden" type="checkbox" id="advantage-filter" name="advantage">
                             <label for="advantage-filter">Блок преимуществ</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-checkbox" type="checkbox" id="news-filter" name="news" checked>
+                            <input class="filter-checkbox visually-hidden" type="checkbox" id="news-filter" name="news" checked>
                             <label for="news-filter">Новости</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-checkbox" type="checkbox" id="gallery-filter" name="gallery">
+                            <input class="filter-checkbox visually-hidden" type="checkbox" id="gallery-filter" name="gallery">
                             <label for="gallery-filter">Галерея</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-checkbox" type="checkbox" id="basket-filter" name="basket">
+                            <input class="filter-checkbox visually-hidden" type="checkbox" id="basket-filter" name="basket">
                             <label for="basket-filter">Корзина</label>
                         </li>
                     </ul>
@@ -89,7 +100,7 @@
         </section>
         <div>
         <section>
-            <h2>Сортировка товаров</h2>
+            <h2 class="visually-hidden">Сортировка товаров</h2>
             <div class="sort-columns">
                 <div>
                     <h3 class="catalog-legend">Сортировать:</h3>
@@ -118,14 +129,12 @@
             </div>
         </section>
         <section>
-            <h2>Список сайтов</h2>
+            <h2 class="visually-hidden">Список сайтов</h2>
             <ul class="site-list">
                 <li class="site-item">
                     <img class="panel" src="images/catalog/browser.png" width="360" height="40" alt="Всплывающая панель">
                     <a href="product.html" title="Сайт Sedona">
-                        <p>
                             <img class="site-image" src="images/catalog/img-sedona.jpg" width="360" height="578" alt="скриншот сайта Sedona">
-                        </p>
                     </a>
                         <div class="site-product">
                             <a href="#" class="site-name">Sedona</a>
@@ -138,9 +147,7 @@
                 <li class="site-item">
                     <img class="panel" src="images/catalog/browser.png" width="360" height="40" alt="Всплывающая панель">
                     <a href="product.html" title="Сайт Pink">
-                        <p>
-                            <img class="site-image" src="images/catalog/img-pink.jpg" width="360" height="578" alt="скриншот сайта Pink">
-                        </p>
+                        <img class="site-image" src="images/catalog/img-pink.jpg" width="360" height="578" alt="скриншот сайта Pink">
                     </a>
                     <div class="site-product">
                         <p>
@@ -155,9 +162,7 @@
                 <li class="site-item">
                     <img class="panel" src="images/catalog/browser.png" width="360" height="40" alt="Всплывающая панель">
                     <a href="product.html" title="Сайт Borodinski">
-                        <p>
-                            <img class="site-image" src="images/catalog/img-barbershop.jpg" width="360" height="578" alt="скриншот сайта барбершопа">
-                        </p>
+                        <img class="site-image" src="images/catalog/img-barbershop.jpg" width="360" height="578" alt="скриншот сайта барбершопа">
                     </a>
                     <div class="site-product">
                         <p>
@@ -172,9 +177,7 @@
                 <li class="site-item">
                     <img class="panel" src="images/catalog/browser.png" width="360" height="40" alt="Всплывающая панель">
                     <a href="product.html" title="Сайт Mishka">
-                        <p>
-                            <img class="site-image" src="images/catalog/img-mishka.jpg" width="360" height="578" alt="скриншот сайта Mishka">
-                        </p>
+                        <img class="site-image" src="images/catalog/img-mishka.jpg" width="360" height="578" alt="скриншот сайта Mishka">
                     </a>
                     <div class="site-product">
                         <p>
@@ -189,9 +192,7 @@
                 <li class="site-item">
                     <img class="panel" src="images/catalog/browser.png" width="360" height="40" alt="Всплывающая панель">
                     <a href="product.html" title="Сайт A+">
-                        <p>
-                            <img class="site-image" src="images/catalog/img-aplus.jpg" width="360" height="578" alt="скриншот сайта А+">
-                        </p>
+                        <img class="site-image" src="images/catalog/img-aplus.jpg" width="360" height="578" alt="скриншот сайта А+">
                     </a>
                     <div class="site-product">
                         <p>
@@ -206,9 +207,7 @@
                 <li class="site-item">
                     <img class="panel" src="images/catalog/browser.png" width="360" height="40" alt="Всплывающая панель">
                     <a href="product.html" title="Сайт Кваст">
-                        <p>
-                            <img class="site-image" src="images/catalog/img-kvast.jpg" width="360" height="578" alt="скриншот сайта Кваст">
-                        </p>
+                        <img class="site-image" src="images/catalog/img-kvast.jpg" width="360" height="578" alt="скриншот сайта Кваст">
                     </a>
                     <div class="site-product">
                         <p>
@@ -240,7 +239,7 @@
     </main>
     <footer class="main-footer">
         <section class="footer-map">
-          <h2>Как нас найти</h2>
+          <h2 class="visually-hidden">Как нас найти</h2>
           <a href="https://www.google.com/maps/place/Studio+212/@59.9704683,30.3170269,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
             <img src="images/footer/map-marker.png" width="231" height="190" alt="Метка студии">
           </a>

@@ -3,7 +3,7 @@
     --brand-color:#FB565A;
     --special-red:#E74246;
     --super-special-red:#D7373B;
-    --bacic-white:#FFFFFF;
+    --basic-white:#FFFFFF;
     --basic-green:#00CA74;
     --special-green:#00BC6C;
     --super-special-green:#00AA62;
@@ -22,6 +22,9 @@
     --border-grey:#DBDBDB;
     --extra-special-grey:#DFDFDF;
     --super-extra-grey:#D5D5D5;
+    --scale-grey:#D7DCDF;
+    --toggle-point-grey:#ABABAB;
+    --button-current-grey:#C1C1C1;
 }
 
 
@@ -35,7 +38,7 @@ body{
     line-height: 24px;
     font-weight: 400;
     color:var(--basic-black);
-    background-color: var(--bacic-white);
+    background-color: var(--basic-white);
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
@@ -74,7 +77,7 @@ fieldset{
     opacity: 0.3;
 }
 
-.first-header{
+.first-slide-header{
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -133,9 +136,76 @@ fieldset{
 }
 
 
+/* slider */
+
+.slider{
+    position: relative;
+    height: min-content;
+    width: 1166px;
+}
+
+.slider-image{
+    width: 760px;
+    height: 431px;
+    position: absolute;
+    left:400px;
+    top:-80px;
+    
+}
+
+.slider-list{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+.first-slide,
+.second-slide,
+.third-slide{
+    display: flex;
+    position: relative;
+    display: none;
+}
+
+.slide-current{
+    display:block;
+}
+
+.slide-button{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--basic-white);
+    color:var(--basic-white);
+    border:2px solid var(--basic-white);
+    cursor: pointer;
+    position: relative;
+}
+
+.slider-controls{
+    position: absolute;
+    top:324px;
+    left:540px;
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-button::before{
+    content:"";
+    width: 4px;
+    height: 4px;
+    border:2px solid var(--button-current-grey);
+    border-radius: 50%;
+    position: absolute;
+    top:20%;
+    left:20%;
+}
+
 
 
 /* scope */
+
 
 .illustration-1{
     background-image:url(images/main/illustration-1.png);
@@ -193,7 +263,7 @@ fieldset{
     display: inline-block;
     font:inherit;
     text-align: center;
-    color:var(--bacic-white);
+    color:var(--basic-white);
     text-transform: uppercase;
     background-color: var(--brand-color);
     width: max-content;
@@ -266,19 +336,37 @@ fieldset{
 }
 
 .info-list{
-    list-style: url(images/css/red-list.svg);
+    list-style: none;
 }
 
 .info-item{
     margin-bottom: 36px;
+    position: relative;
 }
 
+.info-item::before{
+    content:"";
+    position: absolute;
+    background-image: url(images/catalog/red-list-style.svg);
+    width: 25px;
+    height: 2px;
+    top:12px;
+    left:-40px;
+    
+}
 
 .scope{
     padding-bottom: 80px;
 }
 
+.advantages{
+    width: min-content;
+}
+
+
 .advantages-header{
+    text-align: center;
+    width: 358px;
     font-weight: 700;
     color:var(--black);
     margin-top: 37px;
@@ -340,22 +428,14 @@ fieldset{
     opacity: 0.1;
 }
 
-/* .HtmlAcademy{
-    margin-right: 95px;
-    width: 200px;
-    height: 58px;
-} */
 
-/* .Borodinski{
-    margin-right: 104px;
-} */
 
 /* footer */
 
 /* contacts */
 
 .column-white{
-    background-color: var(--bacic-white);
+    background-color: var(--basic-white);
 }
 
 .contacts{
@@ -431,7 +511,7 @@ fieldset{
 
 .close-button{
     border: none;
-    background-color:var(--bacic-white);
+    background-color:var(--basic-white);
     opacity: 0.3;
     margin-right: 90px;
 }
@@ -514,6 +594,7 @@ fieldset{
     line-height: 55px;
     margin-top: 72px;
     margin-bottom: 108px;
+    font-weight: 500;
 }
 
 /* filter */
@@ -538,11 +619,97 @@ fieldset{
     text-transform: uppercase;
 }
 
+.coast-item{
+    margin:0;
+    padding:0;
+    border: 0;
+}
 
+.range-filter{
+    margin-bottom: 54px;
+}
+
+.coast-controls{
+    position: relative;
+    width: 218px;
+    height: 41px;
+    background-color: var(--basic-dark-white);
+    border-radius: 5px;
+    padding-top: 39px;
+    padding-left:22px;
+    padding-right: 22px;
+    margin-bottom: 14px;
+}
+
+.coast-controls .scale{
+    width: 218px;
+    height: 2px;
+    background-color: var(--scale-grey);
+}
+
+.coast-controls .bar{
+    width: 70%;
+    height: 2px;
+    background-color:var(--basic-green);
+}
+
+.coast-controls .toggle{
+    cursor: pointer;
+    position: absolute;
+    top:30px;
+    width: 4px;
+    height: 4px;
+    background-color:var(--toggle-point-grey);
+    padding:0;
+    border:8px solid var(--basic-white);
+    border-radius: 50%;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.coast-controls .toggle-max {
+    left:65%;
+}
+
+.coast-controls .toggle-min{
+    left:5%;
+}
+
+.price-output{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    height: 38px;
+}
+
+.min-price,
+.max-price{
+    text-transform: uppercase;
+}
+
+
+.min-price-input,
+.max-price-input{
+    padding:0;
+    width: 60px;
+    background-color:var(--basic-dark-white);
+    border:0;
+    border-radius: 5%;
+    margin-left:11px;
+}
+
+.max-price{
+    margin-left:33px;
+}
+
+.max-price input,
+.min-price input{
+    text-align: center;
+    padding:8px;
+}
 
 .coast-filter{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .coast-filter p{
@@ -560,6 +727,7 @@ fieldset{
 }
 
 
+
 .filter-list{
     list-style: none;
     text-align: left;
@@ -575,27 +743,58 @@ fieldset{
     margin-bottom: 43px;
 }
 
-.filter-radio{
+.filter-item label{
+    margin-left:36px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.filter-checkbox:checked + label{
+    opacity: 0.3;
+}
+
+.filter-checkbox:hover + label,
+.filter-checkbox:focus +label{
+    opacity: 1;
+}
+
+.filter-checkbox + label::before{
+    content:"";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(images/catalog/checkbox-off.svg);
+    background-repeat: no-repeat;
+    top:1px;
+    left:-40px;
     opacity: 0.4;
 }
 
-.filter-radio:hover,
-.filter-radio:focus{
-    opacity: 1;
-    border:none;
-    color:var(--filter-grey);
-}
-
-
-.filter-checkbox{
+.filter-checkbox:checked + label::before{
+    content:"";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(images/catalog/checkbox-on.svg);
+    background-repeat: no-repeat;
+    top:1px;
+    left:-40px;
     opacity: 0.4;
 }
 
-.filter-checkbox:focus,
-.filter-checkbox:hover{
-    opacity: 1;
-    border:none;
-    color:var(--filter-grey); 
+.filter-radio+label::before{
+    content:"";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(images/catalog/checkbox-off.svg);
+    background-repeat: no-repeat;
+    top:1px;
+    left:-40px;
+    opacity: 0.4;
 }
 
 
@@ -664,7 +863,7 @@ fieldset{
 }
 
 .panel{
-    
+    width: 360px;
     opacity: 0.12;
 }
 
@@ -687,13 +886,9 @@ fieldset{
     padding:16px 72px;
 }
 
-.site-item p{
-    margin:0;
-    padding:0;
-}
 
 .site-image{
-    width: 358px;
+    width: 360px;
     height: 578px;
 }
 
@@ -755,6 +950,11 @@ fieldset{
     background-color: var(--basic-dark-white);
 }
 
+.page-button a{
+    display: block;
+    margin-top: 17px;
+}
+
 
 
 .next{
@@ -762,7 +962,7 @@ fieldset{
 }
 
 .active{
-    background-color: var(--bacic-white);
+    background-color: var(--basic-white);
 }
 
 .page-button:focus,
@@ -833,7 +1033,8 @@ fieldset{
 
 .tagline{
     margin-top:80px;
-    width: 400px;
+    width: min-content;
+    z-index: 2;
 }
 
 .tagline p{
@@ -859,12 +1060,39 @@ fieldset{
 
 
 
-.first-header{
+.first-slide-header{
     width: 400px;
     margin:0;
     padding:0;
 }
 
+.second-slide-header{
+    width: 542px;
+    margin:0;
+    padding:0;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color:var(--black);
+}
+
+.third-slide{
+    width: 402px;
+}
+
+.third-slide-header{
+    width: 542px;
+    margin:0;
+    padding:0;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color:var(--black);
+}
+
+.third-slide-header+p{
+    width: 419px;
+}
 
 .scope-list{
     display: grid;
@@ -903,10 +1131,12 @@ fieldset{
 }
 
 .advantage-container{
-    width: 125px;
+    width: 110px;
     text-align: left;
     
 }
+
+
 
 .advantages-percent{
     margin-bottom: 11px;
@@ -988,6 +1218,7 @@ fieldset{
     display: grid;
     grid-template-columns: 260px 1fr;
     column-gap: 100px;
+    margin-top:55px;
 }
 
 .sort-columns{
@@ -1057,7 +1288,7 @@ fieldset{
     width:443px;
     margin-bottom:60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .page-button{
@@ -1068,3 +1299,9 @@ fieldset{
     margin-right: 0;
 }
  
+.site-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
