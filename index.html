@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel=”icon” href=”icon.ico”>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,36 +31,36 @@
         <section class="slider">
           <ul class="slider-list">
             <li class="first-slide slide-current">
-              <section class="tagline">
+              <div class="tagline">
                 <h2 class="first-slide-header">Долго, дорого,<br>скрупулезно.</h2>
                 <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                 <a href="#" title="Больше информации" class="button learn-button">Узнать больше</a>
-              </section>
-              <section class="slider-image">
+              </div>
+              <div class="slider-image">
                 <img src="images/header/slider/nerds-index-slide1.png" width="766" height="441" alt="Планшет и телефон">
-              </section>
+              </div>
             </li>
 
             <li class="second-slide">
-              <section class="tagline">
+              <div class="tagline">
                 <h2 class="second-slide-header">Любим математику<br> как никто другой</h2>
                 <p>Никакого креатива, только математические формулы <br> для расчета идеальных пропорций.</p>
                 <a href="#" title="Больше информации" class="button learn-button">Узнать больше</a>
-              </section>
-              <section class="slider-image">
+              </div>
+              <div class="slider-image">
                 <img src="images/header/slider/nerds-index-slide2.png" width="766" height="441" alt="Планшет и телефон">
-              </section>
+              </div>
             </li>
 
             <li class="third-slide">
-              <section class="tagline">
+              <div class="tagline">
                 <h2 class="third-slide-header">Только ночь,<br>только хардкор</h2>
                 <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
                 <a href="#" title="Больше информации" class="button learn-button">Узнать больше</a>
-              </section>
-              <section class="slider-image">
+              </div>
+              <div class="slider-image">
                 <img src="images/header/slider/nerds-index-slide3.png" width="766" height="441" alt="Планшет и телефон">
-              </section>
+              </div>
             </li>
 
           </ul>
@@ -137,10 +137,10 @@
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partrens-list">
           <li class="partrens-item HtmlAcademy "> 
-            <a href="#" title="Сайт HtmlAcademy">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" title="Сайт HtmlAcademy">
               <img src="images/main/friends/logo_htmlacademy.png" width="200" height="58" alt="надпись HtmlAcademy">
             </a>
-          </li">
+          </li>
           <li class="partrens-item Borodinski">
             <a href="#" title="Сайт Borodinski">
               <img src="images/main/friends/logo-2.png" width="209" height="90" alt="надпись Borodinski">
@@ -162,20 +162,18 @@
       <footer class="footer-container">
         <section class="footer-map">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <a href="https://www.google.com/maps/place/Studio+212/@59.9704683,30.3170269,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
+          <a class="marker" href="https://www.google.com/maps/place/Studio+212/@59.9704683,30.3170269,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
             <img src="images/footer/map-marker.png" width="231" height="190" alt="Метка студии">
           </a>
+          <div class="contacts">
+              <h2 class="visually-hidden">Связаться с нами</h2>
+              <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
+              <p>наб. Реки Карповки,<br>
+              5 лит П, Санкт-Петербург</p><br>
+              <a href="tel:+78005558628" title="Наш номер телефона" class="number">+7 800 555-86-28</a>
+              <a href="#" class="button contact-button">напишите нам</a>
+          </div>
         </section>
-        <div class="column-white container">
-          <section class="contacts">
-            <h2 class="visually-hidden">Связаться с нами</h2>
-            <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
-            <p>наб. Реки Карповки,<br>
-            5 лит П, Санкт-Петербург</p><br>
-            <a href="tel:+78005558628" title="Наш номер телефона" class="number">+7 800 555-86-28</a></p>
-            <a href="#" class="button contact-button">напишите нам</a>
-          </section>
-        </div>
 
         <div class="container footer-info-columns">
           <section class="footer-social ">
@@ -209,7 +207,7 @@
       <h2 class="visually-hidden">Авторизация</h2>
       <div class="login-top">
         <h3 class="login-header">Напишите нам</h3>
-        <button class="close-button" type="button"><img src="images/css/close-button.svg"></button>
+        <button class="close-button" type="button"><img src="images/css/close-button.svg" alt="Кнопка"></button>
       </div>
       <form class="login-form" method="get" action="https://echo.htmlacademy.ru">
         <div class="login-area">

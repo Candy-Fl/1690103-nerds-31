@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel=”icon” href=”icon.ico”>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,6 +21,7 @@
                 <li class="site-navigation-item" ><a href="">Клиенты</a></li>
                 <li class="site-navigation-item current"><a href="" title="Магазин">Магазин</a></li>
                 <li class="site-navigation-item"><a href="" title="Контакты">Контакты</a></li>
+                
             </ul>
             <a href="" class="cart" title="Корзина">Корзина</a>
         </nav>
@@ -53,19 +54,23 @@
                         </div>
                     </div>
                 </fieldset>
+                
                 <fieldset>
                     <legend class="catalog-legend">Сетка:</legend>
                     <ul class="filter-list">
                         <li class="filter-item">
-                            <input class="filter-radio visually-hidden" type="radio" id="adaptive-filter" name="adaptive" value="adaptive" checked>
+                            <input class="filter-radio visually-hidden" type="radio" id="adaptive-filter" name="radio" value="adaptive">
+                            <span class="radio"></span>
                             <label for="adaptive-filter">Адаптивная</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-radio visually-hidden" type="radio" id="fix-filter" name="fix" value="fix">
+                            <input class="filter-radio visually-hidden" type="radio" id="fix-filter" name="radio" value="fix">
+                            <span class="radio"></span>
                             <label for="fix-filter">Фиксированная</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-radio visually-hidden" type="radio" id="flex-filter" name="flex" value="flex">
+                            <input class="filter-radio visually-hidden" type="radio" id="flex-filter" name="radio" value="flex">
+                            <span class="radio"></span>
                             <label for="flex-filter">Резиновая</label>
                         </li>
                     </ul>
@@ -75,22 +80,27 @@
                     <ul class="special-list">
                         <li class="filter-item">
                             <input class="filter-checkbox visually-hidden" type="checkbox" id="slider-filter" name="slider"  checked>
+                            <span class="check"></span>
                             <label for="slider-filter">Слайдер</label>
                         </li>
                         <li class="filter-item">
                             <input class="filter-checkbox visually-hidden" type="checkbox" id="advantage-filter" name="advantage">
+                            <span class="check"></span>
                             <label for="advantage-filter">Блок преимуществ</label>
                         </li>
                         <li class="filter-item">
-                            <input class="filter-checkbox visually-hidden" type="checkbox" id="news-filter" name="news" checked>
+                            <input class="filter-checkbox visually-hidden" type="checkbox" id="news-filter" name="news" checked >
+                            <span class="check"></span>
                             <label for="news-filter">Новости</label>
                         </li>
                         <li class="filter-item">
                             <input class="filter-checkbox visually-hidden" type="checkbox" id="gallery-filter" name="gallery">
+                            <span class="check"></span>
                             <label for="gallery-filter">Галерея</label>
                         </li>
                         <li class="filter-item">
                             <input class="filter-checkbox visually-hidden" type="checkbox" id="basket-filter" name="basket">
+                            <span class="check"></span>
                             <label for="basket-filter">Корзина</label>
                         </li>
                     </ul>
@@ -136,8 +146,10 @@
                     <a href="product.html" title="Сайт Sedona">
                             <img class="site-image" src="images/catalog/img-sedona.jpg" width="360" height="578" alt="скриншот сайта Sedona">
                     </a>
-                        <div class="site-product">
-                            <a href="#" class="site-name">Sedona</a>
+                        <div class="site-product visually-hidden">
+                            <p>
+                                <a href="#" class="site-name">Sedona</a>
+                            </p>
                             <p>
                                 <a class="description" href="#">Информационный сайт для туристов</a>
                                 <a class="button price-button" href="product.html" title="Оформление покупки">9900Р</a>
@@ -149,7 +161,7 @@
                     <a href="product.html" title="Сайт Pink">
                         <img class="site-image" src="images/catalog/img-pink.jpg" width="360" height="578" alt="скриншот сайта Pink">
                     </a>
-                    <div class="site-product">
+                    <div class="site-product visually-hidden">
                         <p>
                             <a href="#" class="site-name">Pink App</a>
                         </p>
@@ -164,7 +176,7 @@
                     <a href="product.html" title="Сайт Borodinski">
                         <img class="site-image" src="images/catalog/img-barbershop.jpg" width="360" height="578" alt="скриншот сайта барбершопа">
                     </a>
-                    <div class="site-product">
+                    <div class="site-product visually-hidden">
                         <p>
                             <a href="#" class="site-name">Barbershop</a>
                         </p>
@@ -179,7 +191,7 @@
                     <a href="product.html" title="Сайт Mishka">
                         <img class="site-image" src="images/catalog/img-mishka.jpg" width="360" height="578" alt="скриншот сайта Mishka">
                     </a>
-                    <div class="site-product">
+                    <div class="site-product visually-hidden">
                         <p>
                             <a href="#" class="site-name">MISHKA</a>
                         </p>
@@ -194,9 +206,9 @@
                     <a href="product.html" title="Сайт A+">
                         <img class="site-image" src="images/catalog/img-aplus.jpg" width="360" height="578" alt="скриншот сайта А+">
                     </a>
-                    <div class="site-product">
+                    <div class="site-product visually-hidden">
                         <p>
-                            <a href="#" class="site-name">A Plus</a>
+                            <a href="#" class="site-name visually-hidden">A Plus</a>
                         </p>
                         <p>
                             <a class="description" href="#">Лендинг курсов повышения квалификации</a>
@@ -209,7 +221,7 @@
                     <a href="product.html" title="Сайт Кваст">
                         <img class="site-image" src="images/catalog/img-kvast.jpg" width="360" height="578" alt="скриншот сайта Кваст">
                     </a>
-                    <div class="site-product">
+                    <div class="site-product visually-hidden">
                         <p>
                             <a href="#" class="site-name">КВАСТ</a>
                         </p>
@@ -219,6 +231,7 @@
                         </p>
                     </div>
                 </li>
+                
             </ul>
             <ul class="page-list">
                 <li class="page-button active">
@@ -239,44 +252,43 @@
     </main>
     <footer class="main-footer">
         <section class="footer-map">
-          <h2 class="visually-hidden">Как нас найти</h2>
-          <a href="https://www.google.com/maps/place/Studio+212/@59.9704683,30.3170269,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
-            <img src="images/footer/map-marker.png" width="231" height="190" alt="Метка студии">
-          </a>
-        </section>
-        <div class="column-white">
-          <section class="contacts">
-            <h2>Связаться с нами</h2>
-            <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
-            <p>наб. Реки Карповки,<br>
-            5 лит П, Санкт-Петербург</p><br>
-            <a href="tel:+78005558628" title="Наш номер телефона" class="number">+7 800 555-86-28</a></p>
-            <a href="#" class="button">напишите нам</a>
+            <h2 class="visually-hidden">Как нас найти</h2>
+            <a class="marker" href="https://www.google.com/maps/place/Studio+212/@59.9704683,30.3170269,16z/data=!4m5!3m4!1s0x0:0xe703c377f3424272!8m2!3d59.968342!4d30.317381">
+              <img src="images/footer/map-marker.png" width="231" height="190" alt="Метка студии">
+            </a>
+            <div class="contacts">
+                <h2 class="visually-hidden">Связаться с нами</h2>
+                <h3 class="contacts-header">NЁRDS DESIGN STUDIO</h3>
+                <p>наб. Реки Карповки,<br>
+                5 лит П, Санкт-Петербург</p><br>
+                <a href="tel:+78005558628" title="Наш номер телефона" class="number">+7 800 555-86-28</a>
+                <a href="#" class="button contact-button">напишите нам</a>
+            </div>
           </section>
-        </div>
 
-        <section class="footer-social container">
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" title="Наша группа Вконтакте">
-                <img src="images/footer/VK.svg" width="81" height="81" alt="Иконка Вконтакте">
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" title="Наша группа Фейсбук">
-                <img src="images/footer/facebook.svg"  width="81" height="81" alt="Иконка Фейсбук">
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" title="Наша страница в Инстаграм">
-                <img src="images/footer/Instagram.svg" width="81" height="81" alt="Иконка Инстаграм">
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer-offer">
-          <h2 class="footer-offer-header">Давайте дружить, это выгодно!</h2>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
+          <div class="container footer-info-columns">
+            <section class="footer-social ">
+              <ul class="social-list">
+                <li class="social-item">
+                  <a href="#" title="Наша группа Вконтакте">
+                    <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" d="M43.14 44.51c.95-.3 2.18 2.04 3.48 2.94.98.68 1.73.53 1.73.53l3.47-.05s1.82-.1.96-1.55c-.07-.12-.5-1.07-2.59-3.02-2.17-2.05-1.88-1.71.74-5.25 1.6-2.15 2.24-3.46 2.04-4.02-.2-.54-1.37-.4-1.37-.4l-3.91.02c-.38 0-.7.12-.85.52 0 0-.62 1.66-1.45 3.08-1.74 2.99-2.43 3.14-2.72 2.96-.66-.44-.5-1.74-.5-2.67 0-2.9.44-4.1-.84-4.41A6.6 6.6 0 0039.5 33c-1.39-.03-2.57 0-3.24.32-.45.23-.79.72-.58.74.26.04.84.16 1.15.59.4.55.4 1.79.4 1.79s.22 3.41-.55 3.83c-.52.3-1.25-.3-2.8-3.01-.8-1.4-1.4-2.93-1.4-2.93s-.1-.28-.32-.44c-.25-.18-.6-.24-.6-.24l-3.71.02s-.56.02-.77.27c-.18.21-.01.66-.01.66s2.9 6.88 6.2 10.35c3.02 3.18 6.45 2.97 6.45 2.97h1.56s.47-.05.7-.31c.23-.24.22-.7.22-.7s-.03-2.1.94-2.41z" fill="#fff"/></svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Наша группа Фейсбук">
+                    <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" d="M47 35v-4h-4a4 4 0 00-4 4v4h-4v4h4v10h4V43h4v-4h-4v-4h4z" fill="#fff"/></svg>
+                  </a>
+                </li>
+                <li class="social-item">
+                  <a href="#" title="Наша страница в Инстаграм">
+                    <svg class="img-svg" width="81" height="81" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#fff"/><path class="path1" fill-rule="evenodd" clip-rule="evenodd" d="M40.66 1.21a39.12 39.12 0 110 78.25 39.12 39.12 0 010-78.25z" fill="#E1E1E1"/><path class="path2" fill-rule="evenodd" clip-rule="evenodd" d="M33 30h15a3 3 0 013 3v15a3 3 0 01-3 3H33a3 3 0 01-3-3V33a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM33 48v-9h1.18a6.5 6.5 0 1012.64 0H48v9H33zm11-11h4v-4h-4v4z" fill="#fff"/></svg>              </a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer-offer ">
+              <h2 class="footer-offer-header">Давайте дружить, это выгодно!</h2>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </section>
+          </div>
     </footer>
   </body>
