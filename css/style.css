@@ -25,6 +25,7 @@
     --scale-grey:#D7DCDF;
     --toggle-point-grey:#ABABAB;
     --button-current-grey:#C1C1C1;
+    --box-shadow:rgba(0, 0, 0, 0.4);
 }
 
 
@@ -209,21 +210,22 @@ fieldset{
 
 
 .illustration-1{
-    background-image:url(images/main/illustration-1.png);
+    /* background-image:url(../images/main/illustration-1.png); */
+    background-image: url(../../images/main/illustration-1.png);
     width: 300px;
     height: 146px;
     background-color: var(--super-special-red);
 }
 
 .illustration-2{
-    background-image:url(images/main/illustration-2.png);
+    background-image:url(../images/main/illustration-2.png);
     width: 300px;
     height: 146px;
     background-color: var(--special-green);
 }
 
 .illustration-3{
-    background-image:url(images/main/illustration-3.png);
+    background-image:url(../images/main/illustration-3.png);
     width: 300px;
     height: 146px;
     background-color: var(--special-yellow);
@@ -261,6 +263,7 @@ fieldset{
 }
 
 .button{
+    vertical-align: middle;
     display: inline-block;
     font:inherit;
     text-align: center;
@@ -349,7 +352,7 @@ fieldset{
 .info-item::before{
     content:"";
     position: absolute;
-    background-image: url(images/catalog/red-list-style.svg);
+    background-image: url(../images/catalog/red-list-style.svg);
     width: 25px;
     height: 2px;
     top:12px;
@@ -390,6 +393,13 @@ fieldset{
     font-size: 45px;
     line-height: 64px;
     color:var(--black);
+    position: relative;
+}
+
+.low-percent{
+    font-size: 26px;
+    position: absolute;
+    bottom: 5px;
 }
 
 .advantages-text{
@@ -408,9 +418,9 @@ fieldset{
     margin:0;
     padding:0;
     vertical-align:middle;
-    background-image: url(images/main/friends/Stick1.png), 
-                      url(images/main/friends/Stick1.png),
-                      url(images/main/friends/Stick1.png);
+    background-image: url(../images/main/friends/stick1.png), 
+                      url(../images/main/friends/stick1.png),
+                      url(../images/main/friends/stick1.png);
     background-position:260px center, 600px center, 900px center; 
     background-repeat:no-repeat;
 }
@@ -515,7 +525,7 @@ fieldset{
     padding: 0 10px;
     width: 1440px;
     height: 416px;
-    background-image: url("images/footer/map.jpg");
+    background-image: url("../images/footer/map.jpg");
     background-color: #E8E5D5;
     margin-bottom: 68px;
 }
@@ -591,6 +601,8 @@ fieldset{
 .send-button{
     margin-top: 47px;
     padding:16px 83px;
+    outline: none;
+    border:0;
 }
 
 .login-name,
@@ -598,6 +610,15 @@ fieldset{
     height: 50px;
     width: 340px;
     padding-left:16px;
+}
+
+
+.input-error:focus,
+.input-error:hover,
+.input-error:active,
+.input-error{
+    color:var(--special-red);
+    border-color: var(--special-red);
 }
 
 
@@ -634,7 +655,7 @@ fieldset{
     font-size: 18px;
     line-height: 30px;
     color:var(--black);
-    margin-bottom: 14px;
+    margin-bottom: 48px;
     text-transform: uppercase;
 }
 
@@ -682,7 +703,7 @@ fieldset{
     padding:0;
     border:8px solid var(--basic-white);
     border-radius: 50%;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 1px var(--box-shadow);
 }
 
 .coast-controls .toggle-max {
@@ -781,7 +802,7 @@ fieldset{
     position: absolute;
     width: 25px;
     height: 25px;
-    background-image: url(images/catalog/checkbox-on.svg);
+    background-image: url(../images/catalog/checkbox-on.svg);
     background-repeat: no-repeat;
     top:0px;
     left:0px;
@@ -806,7 +827,7 @@ fieldset{
     position: absolute;
     width: 25px;
     height: 25px;
-    background-image: url(images/catalog/checkbox-off.svg);
+    background-image: url(../images/catalog/checkbox-off.svg);
     background-repeat: no-repeat;
     top:0px;
     left:0px;
@@ -818,7 +839,7 @@ fieldset{
     position: absolute;
     width: 25px;
     height: 25px;
-    background-image: url(images/catalog/radio-off.svg);
+    background-image: url(../images/catalog/radio-off.svg);
     background-repeat: no-repeat;
     top:0px;
     left:0px;
@@ -835,7 +856,7 @@ fieldset{
     position: absolute;
     width: 25px;
     height: 25px;
-    background-image: url(images/catalog/radio-on.svg);
+    background-image: url(../images/catalog/radio-on.svg);
     background-repeat: no-repeat;
     top:0px;
     left:0px;
@@ -929,6 +950,11 @@ fieldset{
     opacity: 1;
 }
 
+.site-item:focus .site-product,
+.site-item:hover .site-product{
+    display: block;
+}
+
 .site-item{
     width: 360px;
     min-height: 620px;
@@ -971,7 +997,10 @@ fieldset{
 }
 
 
+
+
 .site-product{
+    display: none;
     position: absolute;
     top:391px;
     padding-left:52px;
@@ -1091,7 +1120,7 @@ fieldset{
     left:-25px;
     width: 16px;
     height: 16px;
-    background-image: url(images/header/cart-icon.svg);
+    background-image: url(../images/header/cart-icon.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -1162,6 +1191,8 @@ fieldset{
 .third-slide-header+p{
     width: 419px;
 }
+
+/* scope  */
 
 .scope-list{
     display: grid;
@@ -1248,14 +1279,13 @@ fieldset{
 /* login-window */
 
 .login{
-    display: none;
     top:auto;
     right:0;
     left:0;
     bottom: 180px;
     margin:auto;
     position: fixed;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 20px 40px var(--box-shadow);
     width: 760px;
     height: 443px;
     padding-left:100px;
@@ -1295,6 +1325,8 @@ fieldset{
     padding-bottom:84px;
 }
 
+
+
 /* grid catalog */
 
 
@@ -1311,7 +1343,6 @@ fieldset{
     grid-template-columns:4fr 3fr 1fr;
     grid-column: 1 / -1;
     align-items: baseline;
-    margin-bottom: 48px;
 }
 
 .sort-list{
