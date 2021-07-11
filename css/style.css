@@ -25,7 +25,7 @@
     --scale-grey:#D7DCDF;
     --toggle-point-grey:#ABABAB;
     --button-current-grey:#C1C1C1;
-    --box-shadow:rgba(0, 0, 0, 0.4);
+    --box-shaow:rgba(0, 0, 0, 0.4);
 }
 
 
@@ -97,15 +97,26 @@ fieldset{
     
 }
 
-.current{
-    border:2px solid var(--brand-color);
-    border-left: none;
-    border-top: none;
-    border-right: none;
-    margin-top:13px;
-    padding-bottom: 13px;
-    
+.site-navigation{
+    font-weight: 500;
 }
+
+.current{
+    position: relative;
+}
+
+.current::before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:21px;
+    top:45px;
+    width:73px;
+    height:2px;
+    background:var(--brand-color);
+}
+
+
 
 .site-navigation a,
 .cart a{
@@ -418,9 +429,9 @@ fieldset{
     margin:0;
     padding:0;
     vertical-align:middle;
-    background-image: url(../images/main/friends/stick1.png), 
-                      url(../images/main/friends/stick1.png),
-                      url(../images/main/friends/stick1.png);
+    background-image: url(../images/main/friends/stick.png), 
+                      url(../images/main/friends/stick.png),
+                      url(../images/main/friends/stick.png);
     background-position:260px center, 600px center, 900px center; 
     background-repeat:no-repeat;
 }
@@ -703,7 +714,7 @@ fieldset{
     padding:0;
     border:8px solid var(--basic-white);
     border-radius: 50%;
-    box-shadow: 0px 2px 1px var(--box-shadow);
+    box-shadow: 0px 2px 1px var(--box-shaow);
 }
 
 .coast-controls .toggle-max {
@@ -1285,7 +1296,7 @@ fieldset{
     bottom: 180px;
     margin:auto;
     position: fixed;
-    box-shadow: 0px 20px 40px var(--box-shadow);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     width: 760px;
     height: 443px;
     padding-left:100px;
