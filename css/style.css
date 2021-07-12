@@ -25,7 +25,8 @@
     --scale-grey:#D7DCDF;
     --toggle-point-grey:#ABABAB;
     --button-current-grey:#C1C1C1;
-    --box-shaow:rgba(0, 0, 0, 0.4);
+    --box-shadow:rgba(0, 0, 0, 0.4);
+    --show-box-shadow:rgba(0, 1, 1, 0.1);
 }
 
 
@@ -252,7 +253,7 @@ fieldset{
 }
 
 .scope-item .button{
-    padding:16px 40px;
+    padding:16px 40px 15px 39px;
 }
 
 .scope-item h3{
@@ -264,6 +265,7 @@ fieldset{
 
 .scope-item p{
     margin-bottom: 32px;
+    font-weight: 400;
 }
 
 .scope-header{
@@ -287,7 +289,7 @@ fieldset{
 
 .learn-button{
     margin-bottom: 95px;
-    padding:16px 54px;
+    padding:17px 54px 15px;
 }
 
 .button:hover,
@@ -353,11 +355,18 @@ fieldset{
 
 .info-list{
     list-style: none;
+    margin:0;
+    padding: 0;
+    padding-left:40px;
 }
 
 .info-item{
     margin-bottom: 36px;
     position: relative;
+}
+
+.info-item:last-child{
+    margin-bottom: 0;
 }
 
 .info-item::before{
@@ -381,12 +390,14 @@ fieldset{
 
 
 .advantages-header{
+    font-size: 16px;
     text-align: center;
     width: 358px;
     font-weight: 700;
     color:var(--black);
     margin-top: 37px;
     margin-bottom: 31px;
+    text-transform: uppercase;
 }
 
 .advantages img{
@@ -434,12 +445,14 @@ fieldset{
                       url(../images/main/friends/stick.png);
     background-position:260px center, 600px center, 900px center; 
     background-repeat:no-repeat;
+    align-items: center;
 }
 
 .partrens-item{
     position: relative;
     opacity: 0.2;
 }
+
 
 
 .partrens-item:focus,
@@ -670,6 +683,10 @@ fieldset{
     text-transform: uppercase;
 }
 
+.special-legend{
+    margin-bottom: 13px;
+}
+
 .coast-item{
     margin:0;
     padding:0;
@@ -714,7 +731,7 @@ fieldset{
     padding:0;
     border:8px solid var(--basic-white);
     border-radius: 50%;
-    box-shadow: 0px 2px 1px var(--box-shaow);
+    box-shadow: 0px 2px 1px var(--box-shadow);
 }
 
 .coast-controls .toggle-max {
@@ -920,6 +937,23 @@ fieldset{
     line-height: 18px;
     font-weight: 500;
     padding: 17px 88px;
+    text-transform: uppercase;
+}
+
+.button-show:focus,
+.button-show:hover{
+    background-color:var(--extra-special-grey);
+}
+
+.button-show:active{
+    background-color:var(--super-extra-grey);
+    box-shadow: inset 0px 3px 0px var(--show-box-shadow);
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.button-show:active span{
+    opacity: 0.3;
 }
 
 .dir{
@@ -1081,6 +1115,13 @@ fieldset{
 
 .page-button:active{
     background-color: var(--super-extra-grey);
+    box-shadow: inset 0px 3px 0px var(--show-box-shadow);
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.page-button:active a{
+    opacity: 0.3;
 }
 
 .visually-hidden {
@@ -1108,6 +1149,7 @@ fieldset{
     width: 1160px;
     margin: 0 auto;
     padding:0 10px;
+    margin-top: 50px;
 }
 
 .site-navigation{
@@ -1369,6 +1411,11 @@ fieldset{
 
 .up{
     margin-left: 18px;
+    background:0;
+}
+
+.down{
+    background:0;
 }
 
 .filter-column{
