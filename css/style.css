@@ -222,7 +222,7 @@ fieldset{
 
 
 .illustration-1{
-    background-image: url(../../images/main/illustration-1.png);
+    background-image: url(../images/main/illustration-1.png);
     width: 300px;
     height: 146px;
     background-color: var(--super-special-red);
@@ -800,7 +800,6 @@ fieldset{
     text-align: left;
     margin:0;
     padding:0;
-    padding-right: 0;
 }
 
 .filter-item{
